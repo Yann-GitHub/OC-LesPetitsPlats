@@ -20,7 +20,7 @@ const recipes = [
       },
       {
         ingredient: "Sucre",
-        quantite: 30,
+        quantity: 30,
         unit: "grammes",
       },
       {
@@ -1775,3 +1775,5 @@ const recipes = [
     ustensils: ["rouleau à patisserie", "fouet"],
   },
 ];
+
+export default recipes;

@@ -230,7 +230,7 @@ body {
 
 .recipe-name {
   font-size: 18px;
-  max-width: 274px;
+  /* max-width: 270px; */
   font-weight: 400;
   margin: 0;
   overflow: hidden;
@@ -238,9 +238,14 @@ body {
   white-space: nowrap;
 }
 
+.recipe-timer {
+  white-space: nowrap;
+}
+
 .timer-duration {
   font-size: 18px;
   font-weight: 700;
+  padding-left: 3px;
 }
 
 .recipe-info {
@@ -253,10 +258,14 @@ body {
   width: 50%;
   padding: 0;
   margin: 0;
+  padding-right: 20px;
 }
 
-/* .recipe-ingredient-item {
-} */
+.recipe-ingredient-item {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
 
 .recipe-ingredient-item-name {
   font-weight: 700;
@@ -291,8 +300,12 @@ body {
   .recipe-description-text {
     font-size: 15px;
     line-height: 15px;
-    -webkit-line-clamp: 6;
-    height: 90px;
+    font-weight: 300;
+    -webkit-line-clamp: 7;
+    -webkit-box-orient: vertical;
+    -moz-box-orient: vertical;
+    hyphens: auto;
+    height: 105px;
   }
   .recipe-info {
     font-size: 15px;
@@ -303,5 +316,13 @@ body {
     text-overflow: ellipsis;
     white-space: nowrap;
     padding-right: 10px;
+  }
+
+  .recipe-ingredient-item-name {
+    font-weight: 600;
+  }
+
+  .recipe-ingredient-item-quantity {
+    font-weight: 400;
   }
 }
