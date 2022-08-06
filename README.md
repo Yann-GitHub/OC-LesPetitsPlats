@@ -30,15 +30,15 @@ Le moteur de recherche permettra de filtrer les recettes en saisissant un ou plu
 - Vanilla JavaScript
 - Approche Desktop First
 - Principe de 'Separation of Concerns'
-- Pas d'utilisation de librairie additionnelle
+- Pas de librairie additionnelle
+- Utilisation du framework CSS Bootstrap (optionnel)
 
 ## Compétences évaluées
 
 - Les bases de l'algorithmique
 - Elaboration d'un Flowchart/algorigramme ([draw.io](https://app.diagrams.net/))
 - Utilisation d'outils de benchmark de performance JS ([Jsben.ch](https://jsben.ch/))
-- Comparer deux approches algorithmiques (fonctionnelle et impérative ??) et réaliser un document de synthèse.
+- Comparer deux approches algorithmiques et réaliser un document de synthèse.
 - Gestion dynamique de données
 - Les différentes méthodes de l'objet ARRAY (filter(), map(), reduce()...)
 - Git branching
-- Utilisation du framework CSS Bootstrap (optionnel)

@@ -1,3 +1,5 @@
+/* eslint-disable import/no-named-default */
+/* eslint-disable import/extensions */
 import { default as dataRecipes } from "./data/recipes.js";
 import Recipe from "./script/models/recipe.js";
 import RecipeCard from "./script/templates/recipeCard.js";
