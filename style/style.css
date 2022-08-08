@@ -33,18 +33,19 @@ body {
   padding-right: 3vw;
 }
 
-/****************** Header *************/
+/********************** Header *****************/
 .header {
   padding-top: 42px;
   /* margin-top: 42px; */
   margin-bottom: 17px;
 }
 
-.header-container {
+.header-logo-link {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-decoration: none;
   cursor: pointer;
 }
 
@@ -62,9 +63,10 @@ body {
 
 /****************** Search Section ******************/
 
-/* Search by text */
+/****************** Main Search Section *************/
 .form-search {
   position: relative;
+  margin-bottom: 20px;
 }
 .search-input {
   display: block;
@@ -87,7 +89,8 @@ body {
 }
 
 .search-input::placeholder {
-  color: rgb(169, 167, 167);
+  color: #000000;
+  opacity: 50%;
 }
 
 .search-input:focus {
@@ -111,18 +114,64 @@ body {
   /* border-radius: 50%; */
 }
 
-/* Search by tag */
-.search-tags {
+/******************* Tags selected Section ***************/
+.selected-tag-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.selected-tag {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: var(--ustensiles-color);
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 600;
+  font-family: "Lato", sans-serif;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.selected-tag-name {
+  margin-right: 10px;
+}
+
+.delete-icone {
+  font-size: 1.3rem;
+  cursor: pointer;
+  transform: scale(1);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.delete-icone:hover {
+  opacity: 50%;
+  transform: scale(1.02);
+}
+
+/******************* Tags Search Section *****************/
+.search-tags-container {
+  position: relative;
+  height: 70px;
+  width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: left;
-  align-items: center;
-  margin-top: 20px;
 }
 
-@media screen and (max-width: 600px) {
-  .search-tags {
+@media screen and (max-width: 796px) {
+  .search-tags-container {
     flex-direction: column;
+    height: 100%;
   }
 }
 
@@ -152,20 +201,6 @@ body {
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
 
-@media screen and (max-width: 600px) {
-  .combobox {
-    width: 100%;
-    padding-right: 0;
-    padding-bottom: 20px;
-  }
-  .combobox-btn {
-    width: 100%;
-  }
-  .combobox:last-child {
-    padding-bottom: 0;
-  }
-}
-
 .blue {
   background-color: var(--ingredients-color);
 }
@@ -178,10 +213,124 @@ body {
   background-color: var(--ustensiles-color);
 }
 
+.combobox-form {
+  position: relative;
+  width: 100%;
+  /* display: none; */
+}
+
+.combobox-input-icon {
+  position: absolute;
+  font-size: 18px;
+  color: #fff;
+  top: 0px;
+  right: 20px;
+  height: 100%;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.combobox-input {
+  display: block;
+  width: 100%;
+  height: 69px;
+  padding: 20px;
+  border: none;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  font-size: 18px;
+  font-weight: 400;
+  font-family: "Lato", sans-serif;
+  color: #fff;
+  background-color: var(--ingredients-color);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.combobox-input::placeholder {
+  color: #fff;
+  opacity: 50%;
+}
+
+.combobox-input:focus {
+  outline: none;
+}
+
+.combobox-input-btn {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+}
+
+.combobox-list {
+  width: 35vw;
+  max-width: 660px;
+  min-width: 200px;
+  max-height: 310px;
+  margin: 0;
+  padding: 0 20px 20px 20px;
+  list-style-type: none;
+  border: none;
+  color: #fff;
+  background-color: var(--ingredients-color);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(155px, 1fr));
+  column-gap: 50px;
+  row-gap: 10px;
+  overflow-y: auto;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  /* display: none; */
+}
+
+.combobox-list-item {
+  font-size: 18px;
+  font-weight: 400;
+  font-family: "Lato", sans-serif;
+  line-height: 21px;
+  grid-column: 1fr;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  transform: scale(1);
+}
+
+.combobox-list-item:hover {
+  opacity: 50%;
+  transform: scale(1.01);
+}
+
+#test {
+  display: none;
+}
+
+@media screen and (max-width: 796px) {
+  .combobox {
+    width: 100%;
+    padding-right: 0;
+    padding-bottom: 20px;
+  }
+  .combobox-btn {
+    width: 100%;
+  }
+  .combobox:last-child {
+    padding-bottom: 0;
+  }
+  .combobox-list {
+    width: 100%;
+    max-width: none;
+  }
+}
+
 /**************** Main Section **************/
 .main {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   grid-gap: 50px;
   margin-top: 20px;
   padding-bottom: 50px;
@@ -230,7 +379,7 @@ body {
 
 .recipe-name {
   font-size: 18px;
-  /* max-width: 270px; */
+  padding-right: 8px;
   font-weight: 400;
   margin: 0;
   overflow: hidden;
@@ -271,9 +420,6 @@ body {
   font-weight: 700;
 }
 
-/* .recipe-ingredient-item-quantity {
-} */
-
 .recipe-description {
   width: 50%;
   height: 100px;
@@ -286,7 +432,6 @@ body {
   font-weight: 400;
   margin: 0;
   height: 97px;
-  min-width: 180px;
   overflow: hidden;
   text-overflow: ellipsis;
   hyphens: auto;
@@ -296,7 +441,7 @@ body {
   -moz-box-orient: vertical;
 }
 
-@media screen and (max-width: 819px) {
+@media screen and (max-width: 796px) {
   .recipe-description-text {
     font-size: 15px;
     line-height: 15px;

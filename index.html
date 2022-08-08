@@ -21,19 +21,24 @@
     />
     <!-- Style sheet -->
     <link rel="stylesheet" href="./style/style.css" />
-    <!-- Infos & SEO -->
+    <!-- Infos -->
     <title>Les petits plats - Recettes de cuisine</title>
     <meta name="description" content="Application de recettes de cuisine" />
     <link rel="icon" type="image/x-icon" href="./assets/favicon.ico" />
   </head>
   <body>
+    <!-- Header Logo -->
     <header class="header">
       <div class="header-container">
-        <img class="header-logo" src="./assets/hat.svg" alt="logo" />
-        <h1 class="header-logo-title">Les petits plats</h1>
+        <a href="./index.html" class="header-logo-link">
+          <img class="header-logo" src="./assets/hat.svg" alt="logo" />
+          <h1 class="header-logo-title">Les petits plats</h1>
+        </a>
       </div>
     </header>
+    <!-- Search section -->
     <section class="search">
+      <!-- Main search section-->
       <form action="" method="" class="form-search">
         <label for="search-input"></label>
         <input
@@ -46,11 +51,147 @@
         />
         <span class="search-icon"><i class="fa fa-search"></i></span>
       </form>
-      <div class="search-tags">
+      <!-- Tags selected section -->
+      <div class="selected-tag-container">
+        <div class="selected-tag">
+          <span class="selected-tag-name">Pâtes</span>
+          <span class="selected-tag-delete"
+            ><i class="far fa-times-circle delete-icone"></i
+          ></span>
+        </div>
+        <div class="selected-tag">
+          <span class="selected-tag-name">Pâtes gg</span>
+          <span class="selected-tag-delete"
+            ><i class="far fa-times-circle delete-icone"></i>
+          </span>
+        </div>
+        <div class="selected-tag">
+          <span class="selected-tag-name">Pâtes fhdj jdj</span>
+          <span class="selected-tag-delete"
+            ><i class="far fa-times-circle delete-icone"></i
+          ></span>
+        </div>
+        <div class="selected-tag">
+          <span class="selected-tag-name">Pâtes dhdh</span>
+          <span class="selected-tag-delete"
+            ><i class="far fa-times-circle delete-icone"></i>
+          </span>
+        </div>
+      </div>
+      <!-- Tags search section -->
+      <div class="search-tags-container">
         <div class="combobox">
-          <button class="combobox-btn blue">
+          <button class="combobox-btn blue" id="test">
             Ingrédients<i class="fas fa-chevron-down"></i>
           </button>
+          <form action="" method="" class="combobox-form">
+            <input
+              class="combobox-input"
+              type="text"
+              placeholder="Rechercher un ingédients"
+            />
+            <span class="combobox-input-icon">
+              <i class="fas fa-chevron-up"></i>
+            </span>
+          </form>
+          <ul class="combobox-list">
+            <li class="combobox-list-item">test dkjdf dkd</li>
+            <li class="combobox-list-item">test djhdf jdj</li>
+            <li class="combobox-list-item">test hf hfod</li>
+            <li class="combobox-list-item">test</li>
+            <li class="combobox-list-item">test</li>
+            <li class="combobox-list-item">test did jdjd idd</li>
+            <li class="combobox-list-item">test dkd id dirrrrrruu</li>
+            <li class="combobox-list-item">testff fidiud dfu</li>
+            <li class="combobox-list-item">test kjdd df ffjf</li>
+            <li class="combobox-list-item">test</li>
+            <li class="combobox-list-item">testffff</li>
+            <li class="combobox-list-item">tesddt ddfddfd</li>
+            <li class="combobox-list-item">test</li>
+            <li class="combobox-list-item">test kdjj jdjd</li>
+            <li class="combobox-list-item">testdjdj djkjd dld</li>
+            <li class="combobox-list-item">test djdkjd odoi</li>
+            <li class="combobox-list-item">testldj kjdkjdf</li>
+            <li class="combobox-list-item">test</li>
+            <li class="combobox-list-item">test</li>
+            <li class="combobox-list-item">test</li>
+            <li class="combobox-list-item">test</li>
+            <li class="combobox-list-item">test</li>
+            <li class="combobox-list-item">test</li>
+            <li class="combobox-list-item">test</li>
+            <li class="combobox-list-item">test</li>
+            <li class="combobox-list-item">test</li>
+            <li class="combobox-list-item">test</li>
+            <li class="combobox-list-item">test</li>
+            <li class="combobox-list-item">test</li>
+            <li class="combobox-list-item">test</li>
+            <li class="combobox-list-item">test</li>
+            <li class="combobox-list-item">test</li>
+            <li class="combobox-list-item">test</li>
+            <li class="combobox-list-item">test</li>
+            <li class="combobox-list-item">test</li>
+            <li class="combobox-list-item">test</li>
+            <li class="combobox-list-item">test</li>
+            <li class="combobox-list-item">test</li>
+            <li class="combobox-list-item">test</li>
+            <li class="combobox-list-item">test</li>
+            <li class="combobox-list-item">test</li>
+            <li class="combobox-list-item">test</li>
+            <li class="combobox-list-item">test</li>
+            <li class="combobox-list-item">test</li>
+            <li class="combobox-list-item">test</li>
+            <li class="combobox-list-item">test</li>
+            <li class="combobox-list-item">test</li>
+            <li class="combobox-list-item">test</li>
+            <li class="combobox-list-item">test</li>
+            <li class="combobox-list-item">test</li>
+            <li class="combobox-list-item">test</li>
+            <li class="combobox-list-item">test</li>
+            <li class="combobox-list-item">test</li>
+            <li class="combobox-list-item">test</li>
+            <li class="combobox-list-item">test</li>
+            <li class="combobox-list-item">test</li>
+            <li class="combobox-list-item">test</li>
+            <li class="combobox-list-item">test</li>
+            <li class="combobox-list-item">test</li>
+            <li class="combobox-list-item">test</li>
+            <li class="combobox-list-item">test</li>
+            <li class="combobox-list-item">test</li>
+            <li class="combobox-list-item">test</li>
+            <li class="combobox-list-item">test</li>
+            <li class="combobox-list-item">test</li>
+            <li class="combobox-list-item">test</li>
+            <li class="combobox-list-item">test</li>
+            <li class="combobox-list-item">test</li>
+            <li class="combobox-list-item">test</li>
+            <li class="combobox-list-item">test</li>
+            <li class="combobox-list-item">test</li>
+            <li class="combobox-list-item">test</li>
+            <li class="combobox-list-item">test</li>
+            <li class="combobox-list-item">test</li>
+            <li class="combobox-list-item">test</li>
+            <li class="combobox-list-item">test</li>
+            <li class="combobox-list-item">test</li>
+            <li class="combobox-list-item">test</li>
+            <li class="combobox-list-item">test</li>
+            <li class="combobox-list-item">test</li>
+            <li class="combobox-list-item">test</li>
+            <li class="combobox-list-item">test</li>
+            <li class="combobox-list-item">test</li>
+            <li class="combobox-list-item">test</li>
+            <li class="combobox-list-item">test</li>
+            <li class="combobox-list-item">test</li>
+            <li class="combobox-list-item">test</li>
+            <li class="combobox-list-item">test</li>
+            <li class="combobox-list-item">test</li>
+            <li class="combobox-list-item">test</li>
+            <li class="combobox-list-item">test</li>
+            <li class="combobox-list-item">test</li>
+            <li class="combobox-list-item">test</li>
+            <li class="combobox-list-item">test</li>
+            <li class="combobox-list-item">test</li>
+            <li class="combobox-list-item">test</li>
+          </ul>
         </div>
         <div class="combobox">
           <button class="combobox-btn green">
