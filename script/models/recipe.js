@@ -1,3 +1,5 @@
+// Class en charge de la structuration des données pour la création de recettes
+// et permettant d'ajouter l'image correnspondant à chaque recette
 export default class Recipe {
   constructor(data) {
     this.id = data.id;

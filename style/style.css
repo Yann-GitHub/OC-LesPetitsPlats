@@ -201,17 +201,9 @@ body {
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
 
-.blue {
-  background-color: var(--ingredients-color);
-}
-
-.green {
-  background-color: var(--appareils-color);
-}
-
-.red {
-  background-color: var(--ustensiles-color);
-}
+/* .combobox-container {
+  display: none;
+} */
 
 .combobox-form {
   position: relative;
@@ -305,7 +297,11 @@ body {
   transform: scale(1.01);
 }
 
-#test {
+.active {
+  display: block;
+}
+
+.hidden {
   display: none;
 }
 
@@ -470,4 +466,16 @@ body {
   .recipe-ingredient-item-quantity {
     font-weight: 400;
   }
+}
+
+.blue {
+  background-color: var(--ingredients-color);
+}
+
+.green {
+  background-color: var(--appareils-color);
+}
+
+.red {
+  background-color: var(--ustensiles-color);
 }

@@ -39,20 +39,22 @@
     <!-- Search section -->
     <section class="search">
       <!-- Main search section-->
-      <form action="" method="" class="form-search">
-        <label for="search-input"></label>
-        <input
-          class="search-input"
-          id="search-input"
-          type="search"
-          name="search-input"
-          placeholder="Rechercher une recette"
-          value=""
-        />
-        <span class="search-icon"><i class="fa fa-search"></i></span>
-      </form>
+      <div id="search">
+        <!-- <form action="" method="" class="form-search">
+          <label for="search-input"></label>
+          <input
+            class="search-input"
+            id="search-input"
+            type="search"
+            name="search-input"
+            placeholder="Rechercher une recette"
+            value=""
+          />
+          <span class="search-icon"><i class="fa fa-search"></i></span>
+        </form> -->
+      </div>
       <!-- Tags selected section -->
-      <div class="selected-tag-container">
+      <!-- <div class="selected-tag-container">
         <div class="selected-tag">
           <span class="selected-tag-name">Pâtes</span>
           <span class="selected-tag-delete"
@@ -77,14 +79,14 @@
             ><i class="far fa-times-circle delete-icone"></i>
           </span>
         </div>
-      </div>
+      </div> -->
       <!-- Tags search section -->
       <div class="search-tags-container">
-        <div class="combobox">
-          <button class="combobox-btn blue" id="test">
+        <div class="combobox" id="combobox-ingredients">
+          <!-- <button class="combobox-btn blue">
             Ingrédients<i class="fas fa-chevron-down"></i>
-          </button>
-          <form action="" method="" class="combobox-form">
+          </button> -->
+          <!-- <form action="" method="" class="combobox-form">
             <input
               class="combobox-input"
               type="text"
@@ -100,108 +102,17 @@
             <li class="combobox-list-item">test hf hfod</li>
             <li class="combobox-list-item">test</li>
             <li class="combobox-list-item">test</li>
-            <li class="combobox-list-item">test did jdjd idd</li>
-            <li class="combobox-list-item">test dkd id dirrrrrruu</li>
-            <li class="combobox-list-item">testff fidiud dfu</li>
-            <li class="combobox-list-item">test kjdd df ffjf</li>
-            <li class="combobox-list-item">test</li>
-            <li class="combobox-list-item">testffff</li>
-            <li class="combobox-list-item">tesddt ddfddfd</li>
-            <li class="combobox-list-item">test</li>
-            <li class="combobox-list-item">test kdjj jdjd</li>
-            <li class="combobox-list-item">testdjdj djkjd dld</li>
-            <li class="combobox-list-item">test djdkjd odoi</li>
-            <li class="combobox-list-item">testldj kjdkjdf</li>
-            <li class="combobox-list-item">test</li>
-            <li class="combobox-list-item">test</li>
-            <li class="combobox-list-item">test</li>
-            <li class="combobox-list-item">test</li>
-            <li class="combobox-list-item">test</li>
-            <li class="combobox-list-item">test</li>
-            <li class="combobox-list-item">test</li>
-            <li class="combobox-list-item">test</li>
-            <li class="combobox-list-item">test</li>
-            <li class="combobox-list-item">test</li>
-            <li class="combobox-list-item">test</li>
-            <li class="combobox-list-item">test</li>
-            <li class="combobox-list-item">test</li>
-            <li class="combobox-list-item">test</li>
-            <li class="combobox-list-item">test</li>
-            <li class="combobox-list-item">test</li>
-            <li class="combobox-list-item">test</li>
-            <li class="combobox-list-item">test</li>
-            <li class="combobox-list-item">test</li>
-            <li class="combobox-list-item">test</li>
-            <li class="combobox-list-item">test</li>
-            <li class="combobox-list-item">test</li>
-            <li class="combobox-list-item">test</li>
-            <li class="combobox-list-item">test</li>
-            <li class="combobox-list-item">test</li>
-            <li class="combobox-list-item">test</li>
-            <li class="combobox-list-item">test</li>
-            <li class="combobox-list-item">test</li>
-            <li class="combobox-list-item">test</li>
-            <li class="combobox-list-item">test</li>
-            <li class="combobox-list-item">test</li>
-            <li class="combobox-list-item">test</li>
-            <li class="combobox-list-item">test</li>
-            <li class="combobox-list-item">test</li>
-            <li class="combobox-list-item">test</li>
-            <li class="combobox-list-item">test</li>
-            <li class="combobox-list-item">test</li>
-            <li class="combobox-list-item">test</li>
-            <li class="combobox-list-item">test</li>
-            <li class="combobox-list-item">test</li>
-            <li class="combobox-list-item">test</li>
-            <li class="combobox-list-item">test</li>
-            <li class="combobox-list-item">test</li>
-            <li class="combobox-list-item">test</li>
-            <li class="combobox-list-item">test</li>
-            <li class="combobox-list-item">test</li>
-            <li class="combobox-list-item">test</li>
-            <li class="combobox-list-item">test</li>
-            <li class="combobox-list-item">test</li>
-            <li class="combobox-list-item">test</li>
-            <li class="combobox-list-item">test</li>
-            <li class="combobox-list-item">test</li>
-            <li class="combobox-list-item">test</li>
-            <li class="combobox-list-item">test</li>
-            <li class="combobox-list-item">test</li>
-            <li class="combobox-list-item">test</li>
-            <li class="combobox-list-item">test</li>
-            <li class="combobox-list-item">test</li>
-            <li class="combobox-list-item">test</li>
-            <li class="combobox-list-item">test</li>
-            <li class="combobox-list-item">test</li>
-            <li class="combobox-list-item">test</li>
-            <li class="combobox-list-item">test</li>
-            <li class="combobox-list-item">test</li>
-            <li class="combobox-list-item">test</li>
-            <li class="combobox-list-item">test</li>
-            <li class="combobox-list-item">test</li>
-            <li class="combobox-list-item">test</li>
-            <li class="combobox-list-item">test</li>
-            <li class="combobox-list-item">test</li>
-            <li class="combobox-list-item">test</li>
-            <li class="combobox-list-item">test</li>
-            <li class="combobox-list-item">test</li>
-            <li class="combobox-list-item">test</li>
-            <li class="combobox-list-item">test</li>
-            <li class="combobox-list-item">test</li>
-            <li class="combobox-list-item">test</li>
-            <li class="combobox-list-item">test</li>
-            <li class="combobox-list-item">test</li>
-          </ul>
+          </ul> -->
         </div>
-        <div class="combobox">
-          <button class="combobox-btn green">
+        <div class="combobox" id="combobox-appliance">
+          <!-- <button class="combobox-btn green">
             Appareils<i class="fas fa-chevron-down"></i>
-          </button>
+          </button> -->
         </div>
-        <div class="combobox">
-          <button class="combobox-btn red">
+        <div class="combobox" id="combobox-ustensils">
+          <!-- <button class="combobox-btn red">
             Ustensiles<i class="fas fa-chevron-down"></i>
-          </button>
+          </button> -->
         </div>
       </div>
     </section>

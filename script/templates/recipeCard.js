@@ -1,8 +1,10 @@
+// Class en charge d'instancier le template HTML pour les recettes de cuisine
 export default class RecipeCard {
   constructor(recipe) {
     this.recipe = recipe;
   }
 
+  // Methode permettant de gérer la création de la liste d'ingrédients en fonction des quantités et unités si nécessaire
   getIngredientsList(elements) {
     let ingredientsList = ``;
 
