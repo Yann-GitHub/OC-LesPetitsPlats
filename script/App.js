@@ -1,4 +1,4 @@
-// Class en charge de centraliser et orchestrer l'ensemble des classes et leurs comportements
+// Class en charge de centraliser et orchestrer l'ensemble des classes et leurs comportements.
 import RecipesStates from "./models/RecipesState.js";
 import Recipe from "./models/Recipe.js";
 import RecipeCard from "./templates/RecipeCard.js";
