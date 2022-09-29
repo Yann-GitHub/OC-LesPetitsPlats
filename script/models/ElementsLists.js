@@ -1,4 +1,5 @@
-// Class permettant de récupere les datas sous forme d'array pour chq Combobox (ingrédients, appareils, ustensiles)
+// Class permettant de récuperer les datas sous forme d'array pour chq Combobox (ingrédients, appareils, ustensiles)
+// Les arrays sont sans doublon, classé par ordre alphabétique et la première lettre est en majuscule
 export default class ElementsList {
   constructor(recipes) {
     this.recipes = recipes;
