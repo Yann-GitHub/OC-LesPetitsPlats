@@ -33,10 +33,9 @@ body {
   padding-right: 3vw;
 }
 
-/********************** Header *****************/
+/************************************ Header *************************************/
 .header {
   padding-top: 42px;
-  /* margin-top: 42px; */
   margin-bottom: 17px;
 }
 
@@ -61,7 +60,7 @@ body {
   margin: 0;
 }
 
-/****************** Search Section ******************/
+/************************************ Search Section ******************************/
 
 /****************** Main Search Section *************/
 .form-search {
@@ -108,13 +107,9 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* transition: all 0.2s ease-in-out; */
-  /* transform: translateY(-50%); */
-  /* width: 30px; */
-  /* border-radius: 50%; */
 }
 
-/******************* Tags selected Section ***************/
+/***************** Tags selected Section *************/
 .selected-tag-container {
   display: flex;
   flex-direction: row;
@@ -158,7 +153,7 @@ body {
   transform: scale(1.02);
 }
 
-/******************* Tags Search Section *****************/
+/***************** Tags Search Section ***************/
 .search-tags-container {
   position: relative;
   height: 70px;
@@ -201,14 +196,9 @@ body {
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
 
-/* .combobox-container {
-  display: none;
-} */
-
 .combobox-form {
   position: relative;
   width: 100%;
-  /* display: none; */
 }
 
 .combobox-input-icon {
@@ -275,7 +265,6 @@ body {
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-  /* display: none; */
 }
 
 .combobox-list-item {
@@ -297,14 +286,6 @@ body {
   transform: scale(1.01);
 }
 
-.active {
-  display: block;
-}
-
-.hidden {
-  display: none;
-}
-
 @media screen and (max-width: 796px) {
   .combobox {
     width: 100%;
@@ -323,10 +304,10 @@ body {
   }
 }
 
-/**************** Main Section **************/
+/*********************************** Main Section **********************************/
 .main {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(350px, 30.4%));
   grid-gap: 50px;
   margin-top: 20px;
   padding-bottom: 50px;
@@ -437,7 +418,24 @@ body {
   -moz-box-orient: vertical;
 }
 
+.error-message {
+  color: var(--ustensiles-color);
+  text-align: center;
+  font-size: 1.2rem;
+  grid-column: 1 / span 3;
+}
+
+@media screen and (max-width: 1223px) {
+  .main {
+    grid-template-columns: repeat(auto-fit, minmax(350px, 46.5%));
+  }
+}
+
 @media screen and (max-width: 796px) {
+  .main {
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  }
+
   .recipe-description-text {
     font-size: 15px;
     line-height: 15px;
@@ -468,6 +466,7 @@ body {
   }
 }
 
+/************************************* Utils ***********************************/
 .blue {
   background-color: var(--ingredients-color);
 }
@@ -478,4 +477,12 @@ body {
 
 .red {
   background-color: var(--ustensiles-color);
+}
+
+.hidden {
+  display: none;
+}
+
+.hide {
+  display: none;
 }
