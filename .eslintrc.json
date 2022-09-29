@@ -14,6 +14,10 @@
         "sourceType": "module"
     },
     "rules": {
-        "prettier/prettier": "error"
+        "prettier/prettier": "error",
+        "import/extensions":  "off",
+        "class-methods-use-this": "off",
+        "no-shadow": "off",
+        "prefer-destructuring": "off"
     }
 }
