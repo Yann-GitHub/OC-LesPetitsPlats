@@ -1,6 +1,6 @@
 import { default as dataRecipes } from "../data/recipes.js";
 import Recipe from "./models/Recipe.js";
-import RecipeCard from "./templates/recipeCard.js";
+import RecipeCard from "./templates/RecipeCard.js";
 import Combobox from "./templates/Combobox.js";
 import ElementsList from "./models/ElementsLists.js";
 import SearchBar from "./templates/SearchBar.js";
