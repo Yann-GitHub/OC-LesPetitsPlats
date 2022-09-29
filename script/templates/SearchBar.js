@@ -1,6 +1,6 @@
-// Class permettant de créer le templates HTML de la barre de recherche principale
+// Class permettant de créer le template HTML de la barre de recherche principale
 export default class SearchBar {
-  constructor() {}
+  // constructor() {}
 
   createSearchBar() {
     const templateSearchBar = `
