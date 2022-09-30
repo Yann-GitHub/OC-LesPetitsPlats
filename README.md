@@ -15,7 +15,7 @@ Le moteur de recherche permettra de filtrer les recettes en saisissant un ou plu
 
 **Prototype**
 
-- Réalisation du prototype du site en respectant la maquette fournie sur [FIGMA](https://www.figma.com/file/xqeE1ZKlHUWi2Efo8r73NK).
+- Réalisation du prototype du site en respectant la maquette [FIGMA](https://www.figma.com/file/xqeE1ZKlHUWi2Efo8r73NK).
 - Implémenter les fonctions de recherche (input text & tags) en se référant au document de '[description du cas d’utilisation de recherche](./docs/description_utilisation_recherche.pdf)'.
 
 **Documents et synthèse**
@@ -35,6 +35,7 @@ Le moteur de recherche permettra de filtrer les recettes en saisissant un ou plu
 
 ## Compétences évaluées
 
+- La programmation orientée objet en JavaScript
 - Les bases de l'algorithmique
 - Elaboration d'un Flowchart/algorigramme ([draw.io](https://app.diagrams.net/))
 - Utilisation d'outils de benchmark de performance JS ([Jsben.ch](https://jsben.ch/))
