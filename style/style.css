@@ -272,7 +272,7 @@ body {
   font-weight: 400;
   font-family: "Lato", sans-serif;
   line-height: 21px;
-  grid-column: 1fr;
+  /* grid-column: 1fr; */
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
@@ -315,7 +315,7 @@ body {
 
 .recipe {
   height: 364px;
-  grid-column: 1fr;
+  /* grid-column: 1fr; */
   display: flex;
   flex-direction: column;
   border-radius: 5px;
