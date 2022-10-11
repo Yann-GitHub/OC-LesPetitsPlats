@@ -15,12 +15,12 @@ Le moteur de recherche permettra de filtrer les recettes en saisissant un ou plu
 
 **Prototype**
 
-- Réalisation du prototype du site en respectant la maquette [FIGMA](https://www.figma.com/file/xqeE1ZKlHUWi2Efo8r73NK).
+- Réalisation du [prototype](https://yann-github.github.io/OC-LesPetitsPlats/) du site en respectant la maquette [FIGMA](https://www.figma.com/file/xqeE1ZKlHUWi2Efo8r73NK).
 - Implémenter les fonctions de recherche (input text & tags) en se référant au document de '[description du cas d’utilisation de recherche](./docs/description_utilisation_recherche.pdf)'.
 
 **Documents et synthèse**
 
-- Réaliser 2 implémentations de l'algorithme de recherche (fonctionnelle et ...) sur 2 branches Git distinctes afin de les analyser. Ces deux implémentations doivent se focaliser uniquement sur le champ de recherche principal.
+- Réaliser 2 implémentations de l'algorithme de recherche sur 2 branches Git distinctes afin de les analyser. Ces deux implémentations doivent se focaliser uniquement sur le champ de recherche principal.
 - Réaliser un Flowchart/Algorigramme afin de décrire l'enchaînement des étapes de l'algorithme [Doc](./docs/Flowchart_algo_recherche.pdf).
 - Tester et analyser les performances des 2 algorithmes de recherche via l'outil [Jsbench.ch](https://jsben.ch/) et déterminer le plus efficace.
 - Réaliser une fiche d’investigation de fonctionnalité qui regroupera le Flowchart, les éléments de benchmarking et une synthèse exposant le choix d'un algorithme en fonction de ces performances [Doc](./docs/fiche_investigation_fonctionnalit%C3%A9.pdf).
