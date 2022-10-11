@@ -35,7 +35,7 @@ Le moteur de recherche permettra de filtrer les recettes en saisissant un ou plu
 
 ## Compétences évaluées
 
-- La programmation orientée objet en JavaScript
+- La programmation orientée objet en JavaScript ([schéma de classes](./docs/schema_classes.png))
 - Les bases de l'algorithmique
 - Elaboration d'un Flowchart/algorigramme ([draw.io](https://app.diagrams.net/))
 - Utilisation d'outils de benchmark de performance JS ([Jsben.ch](https://jsben.ch/))
